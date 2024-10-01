@@ -1,0 +1,156 @@
+/* Add custom font (Optional: can use Google Fonts or any font of your choice) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #fcfcfc, #02d5ff); 
+    color: white; 
+}
+h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 3rem;
+    text-align: center; 
+    color: #011832; 
+    text-shadow: 2px 2px 4px rgba(6, 6, 6, 0.406);
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    position: relative;
+    letter-spacing: 2px; 
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: #fffffe;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background-color: #fbfafa;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling for all cards */
+.card {
+    background: linear-gradient(135deg, #030303, #100c4f); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Text colors for Income and Balance Titles */
+.card h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Income title in white */
+.card.income-card h5 {
+    color: white; 
+}
+
+/* Balance title in red */
+.card.balance-card h5 {
+    color: #dc3545; 
+}
+
+/* Amount Styling */
+.card .amount {
+    font-size: 2.5rem;
+    color: green !important;
+    font-weight: bold;
+}
+
+.card .balance {
+    font-size: 2.5rem;
+    color: white !important; 
+    font-weight: bold;
+}
+
+.card i {
+    font-size: 3rem;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    opacity: 0.2; 
+}
+
+/* Custom table style */
+table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Card Styles */
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fcfcfd;
+}
+
+.card-body {
+    background: linear-gradient(135deg, #030303, #100c4f);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Custom Form Control Styles */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Responsive Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add padding and margin for spacing */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Add margin to the form sections */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Hover effect for Income and Balance cards only */
+.card.income-card:hover,
+.card.balance-card:hover {
+    transform: translateY(-5px); 
+    transition: transform 0.3s ease; 
+}
