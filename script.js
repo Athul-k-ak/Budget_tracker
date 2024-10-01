@@ -14,7 +14,7 @@ const endDate = document.getElementById("end-date");
 const filterBtn = document.getElementById("filter-btn");
 const expenseTableBody = document.getElementById("expenseTableBody");
 
-const totalExpenseDisplay = document.getElementById("totalExpenseDisplay"); 
+const totalExpenseDisplay = document.getElementById("totalExpenseAmount");
 
 let income = 0;
 let expenses = [];
@@ -22,7 +22,7 @@ let expenses = [];
 // Function to calculate and display total expenses
 const displayTotalExpense = (filteredExpenses = expenses) => {
     const totalExpense = filteredExpenses.reduce((sum, expense) => sum + expense.amount, 0);
-    totalExpenseDisplay.textContent = `Total Expense: ₹ ${totalExpense}`; 
+    totalExpenseDisplay.textContent = ` ₹ ${totalExpense}`; // Only update the amount part
 };
 
 // Add income

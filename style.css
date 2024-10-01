@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body {
-    background: linear-gradient(135deg, #f9f7f7, #0f0541); 
+    background: linear-gradient(135deg, #010101, #0d0125); 
     color: white; 
 }
 h1 {
     font-family: 'Poppins', sans-serif; 
     font-size: 3rem;
     text-align: center; 
-    color: #011832; 
+    color: #0b5ebe; 
     text-shadow: 2px 2px 4px rgba(6, 6, 6, 0.406);
     margin-bottom: 1.5rem;
     padding: 10px;
@@ -153,4 +153,15 @@ table {
 .card.balance-card:hover {
     transform: translateY(-5px); 
     transition: transform 0.3s ease; 
+}
+
+#totalExpenseDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Set the text "Total Expense" to white */
+    margin-top: 10px;
+}
+
+#totalExpenseAmount {
+    color: red; /* Set the total expense amount to red */
 }
